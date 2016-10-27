@@ -10,14 +10,34 @@ import UIKit
 
 class LoginViewController: UIViewController {
 	
+	@IBOutlet weak var loginBtn: UIButton!
+	@IBOutlet weak var segmentedControl: UISegmentedControl!
+
+	@IBAction func btnTouched(_ sender: UIButton) {
+		performSegue(withIdentifier: "goToMentorVC", sender: nil)
+	}
+
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
+		
+//		@IBAction func loginTouched(_ sender: AnyObject) {
+//			func indexChanged(sender: UISegmentedControl) {
+//				switch segmentedControl.selectedSegmentIndex {
+//				case 0:
+//					performSegue(withIdentifier: "goToMentorTab", sender: nil)
+//				case 1:
+//					performSegue(withIdentifier: "goToMenteeTab", sender: nil)
+//				default:
+//					break;
+//				}
+//			}
+//		}
 	}
 	
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
-		// Dispose of any resources that can be recreated.
+
 	}
 	
 	

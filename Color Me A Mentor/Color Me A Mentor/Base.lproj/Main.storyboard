@@ -6,7 +6,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--I Am-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="IamViewController" customModule="Color_Me_A_Mentor" customModuleProvider="target" sceneMemberID="viewController">
@@ -38,13 +38,13 @@
                             <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="I Am" image="first" selectedImage="IamIcon" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-666" y="877"/>
         </scene>
-        <!--Item-->
+        <!--I Can Be-->
         <scene sceneID="oHS-3O-cGL">
             <objects>
                 <viewController id="gkG-Ud-h2i" customClass="BeViewController" customModule="Color_Me_A_Mentor" customModuleProvider="target" sceneMemberID="viewController">
@@ -66,16 +66,16 @@
                         </subviews>
                         <color key="backgroundColor" red="0.58431372550000005" green="0.75294117650000003" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="GAI-CN-xmn"/>
+                    <tabBarItem key="tabBarItem" title="I Can Be" selectedImage="IbeIcon" id="GAI-CN-xmn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5pd-oN-4ta" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="96.799999999999997" y="876.61169415292363"/>
         </scene>
-        <!--Second-->
+        <!--IdoViewController-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="IdoViewController" customModule="Color_Me_A_Mentor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" userLabel="IdoViewController" customClass="IdoViewController" customModule="Color_Me_A_Mentor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -104,7 +104,7 @@
                             <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="I Can Do" selectedImage="IdoIcon" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -122,15 +122,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="center" semanticContentAttribute="spatial" fixedFrame="YES" axis="vertical" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="vqS-ZZ-rcD">
-                                <frame key="frameInset" minX="68" minY="98" width="238" height="466"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="center" semanticContentAttribute="spatial" axis="vertical" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="vqS-ZZ-rcD">
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="ColorMeAMentorLogo" translatesAutoresizingMaskIntoConstraints="NO" id="54X-jG-idF">
-                                        <frame key="frameInset" width="238" height="238"/>
-                                    </imageView>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ezg-hz-YNG">
-                                        <frame key="frameInset" minY="254" width="238" height="29"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ColorMeAMentorLogo" translatesAutoresizingMaskIntoConstraints="NO" id="54X-jG-idF"/>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ezg-hz-YNG">
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                         <segments>
                                             <segment title="Mentor"/>
@@ -138,35 +133,39 @@
                                         </segments>
                                         <color key="tintColor" red="0.89411764705882346" green="0.11372549019607843" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
                                     </segmentedControl>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vIM-9p-Vkb">
-                                        <frame key="frameInset" minY="298" width="238" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vIM-9p-Vkb">
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JvG-81-adI">
-                                        <frame key="frameInset" minY="344" width="238" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JvG-81-adI">
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4z-B7-S4R">
-                                        <frame key="frameInset" minY="390" width="238" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4z-B7-S4R">
                                         <color key="backgroundColor" red="0.89411764709999997" green="0.1137254902" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Login">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdh-4B-9sF">
-                                        <frame key="frameInset" minY="436" width="238" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdh-4B-9sF">
                                         <state key="normal" title="Skip Login">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                         </state>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="238" id="sNF-1x-9tO"/>
+                                    <constraint firstAttribute="height" constant="466" id="vZu-mm-2PF"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.58431372550000005" green="0.75294117650000003" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vqS-ZZ-rcD" firstAttribute="centerY" secondItem="Fnb-75-jS9" secondAttribute="centerY" id="jOl-Ff-rFs"/>
+                            <constraint firstItem="vqS-ZZ-rcD" firstAttribute="centerX" secondItem="Fnb-75-jS9" secondAttribute="centerX" id="yyd-XV-eII"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tWa-rU-qhE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -182,6 +181,9 @@
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="barTintColor" red="0.89411764709999997" green="0.1137254902" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
@@ -194,16 +196,16 @@
             </objects>
             <point key="canvasLocation" x="-281" y="134"/>
         </scene>
-        <!--Item-->
+        <!--MentorAmViewController-->
         <scene sceneID="Sfg-QG-aXY">
             <objects>
-                <viewController id="Ai9-Zt-BbD" customClass="MentorAmViewController" customModule="Color_Me_A_Mentor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ai9-Zt-BbD" userLabel="MentorAmViewController" customClass="MentorAmViewController" customModule="Color_Me_A_Mentor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sgg-5w-6yX"/>
                         <viewControllerLayoutGuide type="bottom" id="nuG-Re-6Ks"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="OZu-LC-jtc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MentorAmVC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46Y-aW-s9f">
@@ -216,22 +218,22 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Iyp-Uw-K3V"/>
+                    <tabBarItem key="tabBarItem" title="I Am" image="IamIcon" id="Iyp-Uw-K3V"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OFj-Ac-7nj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-831" y="-1330"/>
         </scene>
-        <!--Item-->
+        <!--ImentorViewController-->
         <scene sceneID="z1u-Mm-KPL">
             <objects>
-                <viewController id="u9p-9m-SaZ" customClass="ImentorViewController" customModule="Color_Me_A_Mentor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="u9p-9m-SaZ" userLabel="ImentorViewController" customClass="ImentorViewController" customModule="Color_Me_A_Mentor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UKI-N9-KGU"/>
                         <viewControllerLayoutGuide type="bottom" id="xvt-Dx-9Ja"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="HzW-wK-Du7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ImentorVC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tH-5f-OCe">
@@ -244,16 +246,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="6Oa-r5-9c5"/>
+                    <tabBarItem key="tabBarItem" title="I Can Mentor" selectedImage="IbeIcon" id="6Oa-r5-9c5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IkG-Op-bNN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-159" y="-1331"/>
         </scene>
-        <!--Item-->
+        <!--BelongViewController-->
         <scene sceneID="jbe-gY-t48">
             <objects>
-                <viewController id="3iN-Nt-bzL" customClass="BelongViewController" customModule="Color_Me_A_Mentor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3iN-Nt-bzL" userLabel="BelongViewController" customClass="BelongViewController" customModule="Color_Me_A_Mentor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3ox-o4-TI9"/>
                         <viewControllerLayoutGuide type="bottom" id="UpQ-z8-dEA"/>
@@ -273,7 +275,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.58431372550000005" green="0.75294117650000003" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="xOc-cB-TWG"/>
+                    <tabBarItem key="tabBarItem" title="I Belong" selectedImage="IbelongIcon" id="xOc-cB-TWG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4P4-Ok-vDV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -283,11 +285,14 @@
         <scene sceneID="46k-mD-tgZ">
             <objects>
                 <tabBarController id="i7z-H2-KF4" sceneMemberID="viewController">
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="aAG-6T-vQJ">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="aAG-6T-vQJ">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="barTintColor" red="0.89411764709999997" green="0.1137254902" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="Ai9-Zt-BbD" kind="relationship" relationship="viewControllers" id="ijz-bN-J80"/>
@@ -303,11 +308,14 @@
     </scenes>
     <resources>
         <image name="ColorMeAMentorLogo" width="238" height="238"/>
+        <image name="IamIcon" width="23" height="28"/>
+        <image name="IbeIcon" width="33" height="32"/>
+        <image name="IbelongIcon" width="43" height="23"/>
+        <image name="IdoIcon" width="28" height="29"/>
         <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="WD9-NR-aOs"/>
-        <segue reference="rtN-dv-bMr"/>
+        <segue reference="lzU-1b-eKA"/>
+        <segue reference="DG3-qC-PJw"/>
     </inferredMetricsTieBreakers>
 </document>

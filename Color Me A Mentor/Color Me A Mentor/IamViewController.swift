@@ -19,6 +19,20 @@ class IamViewController: UIViewController {
 		super.didReceiveMemoryWarning()
 		// Dispose of any resources that can be recreated.
 	}
+	
+	@IBAction func takeQuiz(_ sender: UIButton) {
+		
+		// Load the second storyboard by name.
+		let storyboard = UIStoryboard(name: "MainQuiz", bundle: nil)
+		
+		// Use the new storyboard to instantiate a certain UIViewController by name.
+		let controller = storyboard.instantiateViewController(withIdentifier: "QuizEntryViewController") as UIViewController
+		
+		//self.presentViewController(controller, animated: true, completion: nil)
+		
+		self.navigationController?.pushViewController(controller, animated: true)
+	}
+
 
 
 }

@@ -49,8 +49,8 @@ class IDoArtViewController: UIViewController,UIImagePickerControllerDelegate, UI
     
     @IBAction func save(_ sender: UIButton) {
         
-        artFromLib = Art(pic: photoImage.image!, title: photoTitle.text!)
-        self.performSegue(withIdentifier: "unwindToArtList", sender: self)
+		artFromLib = Art(pic: photoImage.image!, title: photoTitle.text!)
+		self.performSegue(withIdentifier: "unwindToArtList", sender: self)
         
     }
     // MARK: UIImagePickerControllerDelegate

@@ -15,17 +15,21 @@ class IDoArtViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    @IBAction func cancel(_ sender: UIBarButtonItem) {
+    @IBAction func cancelBtn(_ sender: UIButton) {
+     print("Cancel button is being pressed!")
         // Depending on style of presentation (modal or push presentation), this view controller needs to be dismissed in two different ways.
-        let isPresentingInAddArtMode = presentingViewController is UINavigationController
+    dismiss(animated: true, completion: nil)
+   //     let isPresentingInAddArtMode = presentingViewController is UINavigationController
         
-        if isPresentingInAddArtMode {
+      //  if isPresentingInAddArtMode {
+     //       print("dismiss")
             dismiss(animated: true, completion: nil)
-        } else {
-            navigationController!.popViewController(animated: true)
-        }
-
+    //    } else {
+    //        navigationController!.popViewController(animated: true)
+            print("pop")
+    //    }
     }
+    
    
     
     @IBAction func save(_ sender: UIButton) {

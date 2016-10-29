@@ -450,12 +450,12 @@ Caring…Concerned…Helpful</string>
                         <viewControllerLayoutGuide type="top" id="MoI-cb-MWl"/>
                         <viewControllerLayoutGuide type="bottom" id="Bug-TW-mb5"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="WcO-ca-2h4">
+                    <view key="view" contentMode="scaleToFill" id="WcO-ca-2h4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greyBg" translatesAutoresizingMaskIntoConstraints="NO" id="Q6P-if-56L">
-                                <rect key="frame" x="-39" y="147" width="414" height="520"/>
+                                <rect key="frame" x="-39" y="147" width="414" height="471"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Share what you can do!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2F-68-YgG">
                                 <rect key="frame" x="88" y="33" width="199.5" height="23"/>
@@ -481,7 +481,7 @@ Caring…Concerned…Helpful</string>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="113" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JsP-jk-GIg">
-                                <rect key="frame" x="0.0" y="114" width="375" height="553"/>
+                                <rect key="frame" x="0.0" y="114" width="375" height="504"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="artCell" rowHeight="121" id="TjW-Ki-tHd" customClass="ArtCell" customModule="Color_Me_A_Mentor" customModuleProvider="target">
@@ -654,8 +654,8 @@ Caring…Concerned…Helpful</string>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="gkG-Ud-h2i" kind="relationship" relationship="viewControllers" id="7IP-px-uiv"/>
-                        <segue destination="3iN-Nt-bzL" kind="relationship" relationship="viewControllers" id="DG3-qC-PJw"/>
-                        <segue destination="HNU-db-YpA" kind="relationship" relationship="viewControllers" id="8Pt-mS-dlN"/>
+                        <segue destination="HNU-db-YpA" kind="relationship" relationship="viewControllers" id="EZs-8d-UZ6"/>
+                        <segue destination="3iN-Nt-bzL" kind="relationship" relationship="viewControllers" id="j8k-Qa-haB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -1171,10 +1171,10 @@ Caring…Concerned…Helpful</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cx5-6g-VdQ" userLabel="Photo Image View">
-                                <rect key="frame" x="16" y="100" width="343" height="533"/>
+                                <rect key="frame" x="16" y="164" width="343" height="469"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name your Art" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fON-yw-VCR" userLabel="Art Text Field">
-                                <rect key="frame" x="16" y="40" width="343" height="30"/>
+                                <rect key="frame" x="16" y="104" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -1183,7 +1183,7 @@ Caring…Concerned…Helpful</string>
                         <color key="backgroundColor" red="0.58431372549019611" green="0.75294117647058822" blue="0.76470588235294112" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Cx5-6g-VdQ" firstAttribute="top" secondItem="fON-yw-VCR" secondAttribute="bottom" constant="30" id="8XY-Nh-cFl"/>
-                            <constraint firstItem="fON-yw-VCR" firstAttribute="top" secondItem="T3B-hV-lKH" secondAttribute="bottom" constant="20" id="9OE-rz-w3d"/>
+                            <constraint firstItem="fON-yw-VCR" firstAttribute="top" secondItem="T3B-hV-lKH" secondAttribute="bottom" constant="40" id="9OE-rz-w3d"/>
                             <constraint firstItem="Cx5-6g-VdQ" firstAttribute="leading" secondItem="VAf-ZX-TgN" secondAttribute="leadingMargin" id="Fxn-X2-IhS"/>
                             <constraint firstItem="qaA-xv-dOe" firstAttribute="top" secondItem="Cx5-6g-VdQ" secondAttribute="bottom" constant="34" id="ZUR-t3-ybh"/>
                             <constraint firstItem="fON-yw-VCR" firstAttribute="leading" secondItem="VAf-ZX-TgN" secondAttribute="leadingMargin" id="hgy-nG-ItE"/>
@@ -1199,6 +1199,9 @@ Caring…Concerned…Helpful</string>
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="cancelBtn:" destination="cNE-en-qGK" eventType="touchUpInside" id="Nw7-w8-wdT"/>
+                                </connections>
                             </button>
                             <connections>
                                 <action selector="cancel:" destination="cNE-en-qGK" id="hhq-cc-k5X"/>
@@ -1231,7 +1234,7 @@ Caring…Concerned…Helpful</string>
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="equ-cN-erU" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Qpa-7y-Jlc">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qpa-7y-Jlc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -1274,6 +1277,6 @@ Caring…Concerned…Helpful</string>
         <image name="yellow" width="28" height="28"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yUr-df-99j"/>
+        <segue reference="Gg0-lO-tm8"/>
     </inferredMetricsTieBreakers>
 </document>

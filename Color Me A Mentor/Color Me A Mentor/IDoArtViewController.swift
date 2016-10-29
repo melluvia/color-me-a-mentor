@@ -9,12 +9,24 @@
 import UIKit
 
 class IDoArtViewController: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-
+    
+    struct Art {
+        var pic: UIImage
+        var title: String
+    }
+    
+    var artFromLib: Art?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
     @IBAction func cancelBtn(_ sender: UIButton) {
      print("Cancel button is being pressed!")
         
@@ -31,17 +43,15 @@ class IDoArtViewController: UIViewController,UIImagePickerControllerDelegate, UI
     }
     
    
-    
-    @IBAction func save(_ sender: UIButton) {
-        
-        
-    }
     @IBOutlet weak var photoTitle: UITextField!
     @IBOutlet weak var photoImage: UIImageView!
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func save(_ sender: UIButton) {
+        
+        artFromLib = Art(pic: photoImage.image!, title: photoTitle.text!)
+        self.performSegue(withIdentifier: "unwindToArtList", sender: self)
+        
     }
     // MARK: UIImagePickerControllerDelegate
     
@@ -70,10 +80,6 @@ class IDoArtViewController: UIViewController,UIImagePickerControllerDelegate, UI
         // The info dictionary contains multiple representations of the image, and this uses the original.
         let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
         
-        // If we already have a URL for an image - the user wants to do an image replacement.
-      //  if meal?.photoUrl != nil {
-      //      meal?.replacePhoto = true
-      //  }
         
         // Set photoImageView to display the selected image.
         photoImage.image = selectedImage

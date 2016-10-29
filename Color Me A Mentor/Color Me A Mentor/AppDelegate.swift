@@ -16,7 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
+		
+		//trying to change it from gray
+		
+//		let color:UIColor =  UIColor(red: 34.0/255.0, green: 128.0/255.0, blue: 66.0/255.0, alpha: 0.0)
+//		UITabBarItem.appearance.set([NSForegroundColorAttributeName: color], for: .normal)
+		
+		// then if StateSelected should be different, you should add this code
+		UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.white], for: .selected)
+		
 		return true
+		
+		
 	}
 
 	func applicationWillResignActive(_ application: UIApplication) {

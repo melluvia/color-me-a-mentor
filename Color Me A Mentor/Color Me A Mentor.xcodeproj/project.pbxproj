@@ -12,6 +12,7 @@
 		01250F291DC3DA5A00CAA924 /* IDoArtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01250F281DC3DA5A00CAA924 /* IDoArtViewController.swift */; };
 		6C4367031DC4D44D00D3E3FC /* MainQuiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C4367011DC4D44D00D3E3FC /* MainQuiz.storyboard */; };
 		6C4367051DC4D8B000D3E3FC /* QuizEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4367041DC4D8B000D3E3FC /* QuizEntryViewController.swift */; };
+		6CF42D7E1DC503CA002932A2 /* QuizResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF42D7D1DC503CA002932A2 /* QuizResultViewController.swift */; };
 		6CFB83431DC27861001CAEBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFB83421DC27861001CAEBB /* AppDelegate.swift */; };
 		6CFB83451DC27861001CAEBB /* IamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFB83441DC27861001CAEBB /* IamViewController.swift */; };
 		6CFB834C1DC27861001CAEBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CFB834B1DC27861001CAEBB /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 		01250F281DC3DA5A00CAA924 /* IDoArtViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDoArtViewController.swift; sourceTree = "<group>"; };
 		6C4367021DC4D44D00D3E3FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainQuiz.storyboard; sourceTree = "<group>"; };
 		6C4367041DC4D8B000D3E3FC /* QuizEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizEntryViewController.swift; sourceTree = "<group>"; };
+		6CF42D7D1DC503CA002932A2 /* QuizResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizResultViewController.swift; sourceTree = "<group>"; };
 		6CFB833F1DC27861001CAEBB /* Color Me A Mentor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Color Me A Mentor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CFB83421DC27861001CAEBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CFB83441DC27861001CAEBB /* IamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IamViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				6CFB83441DC27861001CAEBB /* IamViewController.swift */,
 				6C4367041DC4D8B000D3E3FC /* QuizEntryViewController.swift */,
 				6C4367011DC4D44D00D3E3FC /* MainQuiz.storyboard */,
+				6CF42D7D1DC503CA002932A2 /* QuizResultViewController.swift */,
 				6CFB835E1DC28211001CAEBB /* LoginViewController.swift */,
 				6CFB83581DC280EA001CAEBB /* BelongViewController.swift */,
 				6CFB83601DC29953001CAEBB /* Main.storyboard */,
@@ -176,6 +179,7 @@
 				6CFB835F1DC28211001CAEBB /* LoginViewController.swift in Sources */,
 				6CFB835D1DC281A1001CAEBB /* ImentorViewController.swift in Sources */,
 				01250F271DC3D6D100CAA924 /* ArtCell.swift in Sources */,
+				6CF42D7E1DC503CA002932A2 /* QuizResultViewController.swift in Sources */,
 				6CFB83591DC280EA001CAEBB /* BelongViewController.swift in Sources */,
 				6CFB83571DC28065001CAEBB /* BeViewController.swift in Sources */,
 				6C4367051DC4D8B000D3E3FC /* QuizEntryViewController.swift in Sources */,

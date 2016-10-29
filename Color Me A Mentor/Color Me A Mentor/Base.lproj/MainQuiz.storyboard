@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZTR-WV-Fk9">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -7,6 +7,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="psT-CF-OZu">
+            <objects>
+                <navigationController storyboardIdentifier="UINavigationController" id="ZTR-WV-Fk9" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ldM-ri-UaV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="3dt-Jk-yUi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HVW-pe-Ot4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-614" y="115"/>
+        </scene>
         <!--QuizEntryViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -19,21 +35,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="49" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipX-2v-V3H">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipX-2v-V3H">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="bsE-sg-3j6"/>
-                                    <constraint firstAttribute="height" constant="383" id="nlY-AY-lOO"/>
+                                    <constraint firstAttribute="height" constant="191" id="nlY-AY-lOO"/>
                                 </constraints>
                                 <string key="text">A personality test is completed to yield a description of an individual’s distinct
 personality traits. In most instances, your personality will influence
 relationships with your family, friends, and classmates and contribute to your
-health and well-being. Teachers can administer a personality test in class to
-help your children discover their strengths and developmental needs. The
-driving force behind administering a personality test is to open up lines of
-communication and bring students together to have a higher appreciation for
-one another. A personality test can provide guidance to teachers of what
-teaching strategies will be the most effective for their students.</string>
+health and well-being. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -51,30 +62,28 @@ teaching strategies will be the most effective for their students.</string>
                                     <segue destination="Ljl-XM-zfN" kind="show" id="lhZ-iq-KJc"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personality Quiz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Wy-86-UAi">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="GOt-Vi-f8e"/>
-                                    <constraint firstAttribute="width" constant="225" id="dy5-9g-aHz"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.58431372550000005" green="0.75294117650000003" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="5pB-cN-Atr" firstAttribute="top" secondItem="ipX-2v-V3H" secondAttribute="bottom" constant="8" id="31L-c3-Cpz"/>
+                            <constraint firstItem="ipX-2v-V3H" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="19" id="DTR-GV-Bdr"/>
                             <constraint firstItem="ipX-2v-V3H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M4L-5w-8pU"/>
-                            <constraint firstItem="ipX-2v-V3H" firstAttribute="top" secondItem="9Wy-86-UAi" secondAttribute="bottom" constant="24" id="cCl-QF-0Q2"/>
-                            <constraint firstItem="9Wy-86-UAi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dXz-jc-agB"/>
-                            <constraint firstItem="9Wy-86-UAi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="39" id="rEa-mj-B9U"/>
+                            <constraint firstItem="ipX-2v-V3H" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="McY-j3-int"/>
+                            <constraint firstItem="ipX-2v-V3H" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="yW8-Eg-60a"/>
                             <constraint firstItem="5pB-cN-Atr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yXc-Mf-WH5"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Personality Quiz" id="cFG-OE-WF2">
+                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="LOi-8Y-ed2">
+                            <connections>
+                                <action selector="cancel:" destination="BYZ-38-t0r" id="a4m-tv-xRz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+            <point key="canvasLocation" x="141.59999999999999" y="114.69265367316342"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="m9X-cZ-pUf">
@@ -454,10 +463,10 @@ good student.</string>
             </objects>
             <point key="canvasLocation" x="828" y="2101.7991004497753"/>
         </scene>
-        <!--View Controller-->
+        <!--Quiz Result View Controller-->
         <scene sceneID="qYI-1V-PWO">
             <objects>
-                <viewController id="XtF-zS-VOt" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QuizResultViewController" id="XtF-zS-VOt" customClass="QuizResultViewController" customModule="Color_Me_A_Mentor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oal-L5-CSh"/>
                         <viewControllerLayoutGuide type="bottom" id="bwU-5S-tDm"/>
@@ -495,6 +504,9 @@ I like being artistic, communicating with people, and helping people.</string>
                                 <state key="normal" title="Share Your Color">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="finishQuiz:" destination="XtF-zS-VOt" eventType="touchUpInside" id="G7Y-GZ-JLz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.58431372550000005" green="0.75294117650000003" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

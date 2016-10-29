@@ -13,6 +13,7 @@ class IamViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
+
 	}
 
 	override func didReceiveMemoryWarning() {
@@ -28,9 +29,9 @@ class IamViewController: UIViewController {
 		// Use the new storyboard to instantiate a certain UIViewController by name.
 		let controller = storyboard.instantiateViewController(withIdentifier: "QuizEntryViewController") as UIViewController
 		
-		//self.presentViewController(controller, animated: true, completion: nil)
-		
-		self.navigationController?.pushViewController(controller, animated: true)
+		self.present(controller, animated: true, completion: nil)
+//
+//		self.navigationController?.pushViewController(controller, animated: true)
 	}
 
 

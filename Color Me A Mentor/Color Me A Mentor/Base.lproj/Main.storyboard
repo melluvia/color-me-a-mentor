@@ -1170,8 +1170,13 @@ Caring…Concerned…Helpful</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cx5-6g-VdQ" userLabel="Photo Image View">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cx5-6g-VdQ" userLabel="Photo Image View">
                                 <rect key="frame" x="16" y="164" width="343" height="469"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="vQh-c8-MAL" appends="YES" id="MXJ-cp-Lau"/>
+                                </connections>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name your Art" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fON-yw-VCR" userLabel="Art Text Field">
                                 <rect key="frame" x="16" y="104" width="343" height="30"/>
@@ -1226,6 +1231,11 @@ Caring…Concerned…Helpful</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QI0-nL-d4T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="vQh-c8-MAL">
+                    <connections>
+                        <action selector="onSelectingImagePicker:" destination="cNE-en-qGK" id="Ypr-Ej-5m1"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1273" y="1443"/>
         </scene>

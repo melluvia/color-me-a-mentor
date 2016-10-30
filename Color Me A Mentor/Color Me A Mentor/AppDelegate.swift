@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //		UITabBarItem.appearance.set([NSForegroundColorAttributeName: color], for: .normal)
 		
 		// then if StateSelected should be different, you should add this code
-		UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.white], for: .selected)
+//		UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.white], for: .selected)
 		
 		return true
 		

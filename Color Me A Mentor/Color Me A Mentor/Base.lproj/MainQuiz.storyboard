@@ -41,10 +41,12 @@
                                     <constraint firstAttribute="width" constant="343" id="bsE-sg-3j6"/>
                                     <constraint firstAttribute="height" constant="191" id="nlY-AY-lOO"/>
                                 </constraints>
-                                <string key="text">A personality test is completed to yield a description of an individual’s distinct
-personality traits. In most instances, your personality will influence
-relationships with your family, friends, and classmates and contribute to your
-health and well-being. </string>
+                                <string key="text">
+• Increasing productivity
+• Get along better with classmates
+• Help students realize their full potential
+• Identify teaching strategies for students
+• Help students appreciate other personality types</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

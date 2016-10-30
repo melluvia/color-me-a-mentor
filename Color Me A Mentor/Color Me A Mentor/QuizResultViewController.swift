@@ -26,7 +26,7 @@ class QuizResultViewController: UIViewController {
 		let storyboard = UIStoryboard(name: "Main", bundle: nil)
 		
 		// Use the new storyboard to instantiate a certain UIViewController by name.
-		let controller = storyboard.instantiateViewController(withIdentifier: "IamViewController") as UIViewController
+		let controller = storyboard.instantiateViewController(withIdentifier: "UITabBarController") as UIViewController
 		
 		self.present(controller, animated: true, completion: nil)
 		//
